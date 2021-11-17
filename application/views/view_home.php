@@ -25,7 +25,7 @@
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="<?= base_url('assets/shop/images/favicon.png'); ?>">
 
 </head>
 <body>
@@ -33,6 +33,7 @@
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container simpleStore">
+        <a href="<?= base_url('page/cadastro_produtos'); ?>"><i class="fa fa-wpforms" aria-hidden="true" style="padding: 10px; margin-bottom: 10px; border-style: groove;"> Adiocnar/Remover Produtos</i></a>
         <div class="row">
             <a class="brand" href="#"></a>
             <a class="button button-primary u-pull-right simpleStore_viewCart">

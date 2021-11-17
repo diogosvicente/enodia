@@ -79,7 +79,7 @@ $(function() {
 		numColumns : 3,
 
 		// name of JSON file, located in directory root
-		JSONFile : "http://localhost/enodia/page/teste"
+		JSONFile : "http://localhost/enodia/page/produtos"
 
 	});
 
