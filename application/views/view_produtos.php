@@ -16,7 +16,7 @@ echo '{"products":[';
 						{ "Camara" : "'.$value['camara'].'" },
 			    		{ "OneOfAKind" : "'.$value['oneOfAKind'].'" }
 					],
-					"image" : "'.$value['imagem'].'",
+					"image" : "'.base_url('assets/uploads/'.$value['imagem']).'",
 					"description" : "'.$value['descricao'].'"
 				},';
 			$aux++;
@@ -30,7 +30,7 @@ echo '{"products":[';
 					{ "Camara" : "'.$value['camara'].'" },
 			    	{ "OneOfAKind" : "'.$value['oneOfAKind'].'" }
 				],
-				"image" : "'.$value['imagem'].'",
+				"image" : "'.base_url('assets/uploads/'.$value['imagem']).'",
 				"description" : "'.$value['descricao'].'"
 			}]';
 		}

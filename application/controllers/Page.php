@@ -23,8 +23,13 @@ class Page extends CI_Controller {
 		$crud = new Grocery_CRUD();
 		$crud->set_table("produto");
 		$crud->set_field_upload('imagem','assets/uploads');
-		$crud->required_fields("nome", "preco", "imagem", "descricao");	
+		$crud->required_fields("nome", "preco", "imagem", "descricao");
+		$crud->callback_field('preco',array($this, '_mascara_preco'));
 		$form = $crud->render();
 		$this->load->view('view_cadastro_produtos',$form);
+	}
+
+	function _mascara_preco($value = '', $primary_key = null){
+    	return '<input name="valor1" type="text" class="mascara" >';
 	}
 }
