@@ -33,7 +33,31 @@
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container simpleStore">
-        <a href="<?= base_url('page/cadastro_produtos'); ?>"><i class="fa fa-wpforms" aria-hidden="true" style="padding: 10px; margin-bottom: 10px; border-style: groove;"> Adiocnar/Remover Produtos</i></a>
+        
+
+        <?php
+
+            if ($this->session->userdata("usuario_logado")){ ?>
+
+                <p>Olá, <?= $dados_usuario->nome; ?>! ✍(◔◡◔)</p>
+
+                <a href="<?= base_url('login/logout'); ?>"><i class="fa fa-sign-out" aria-hidden="true" style="padding: 10px; margin-bottom: 10px; border-style: groove;"> Sair </i></a>
+
+                <a href="<?= base_url('page/cadastro_produtos'); ?>"><i class="fa fa-wpforms" aria-hidden="true" style="padding: 10px; margin-bottom: 10px; border-style: groove;"> Adicionar/Remover Produtos</i></a>
+
+                <a href="<?= base_url('page/cadastro_usuarios'); ?>"><i class="fa fa-user" aria-hidden="true" style="padding: 10px; margin-bottom: 10px; border-style: groove;"> Adicionar/Remover Administradores</i></a>
+
+                <hr>
+                
+            <?php }else{ ?>
+                
+                <a href="<?= base_url('page/cadastro_produtos'); ?>"><i class="fa fa-wpforms" aria-hidden="true" style="padding: 10px; margin-bottom: 10px; border-style: groove;"> Acessar como administrador</i></a>
+
+            <?php }
+
+        ?>
+        
+
         <div class="row">
             <a class="brand" href="#"></a>
             <a class="button button-primary u-pull-right simpleStore_viewCart">
