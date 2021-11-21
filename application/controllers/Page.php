@@ -13,6 +13,7 @@ class Page extends CI_Controller {
 		// Passando dados do usuário para a view
 		$data['dados_usuario'] = $this->usuarios_model->getUserData($id_usuario);
 
+		$this->load->view('template/01_header');
 		$this->load->view('view_home', $data);
 	}
 

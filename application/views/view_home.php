@@ -1,39 +1,7 @@
-<!DOCTYPE html>
-<html lang="ptbr">
-<head>
-
-    <!-- Basic Page Needs
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>Diego Bike Motos</title>
-    <meta name="description" content="A clean, responsive storefront boilerplate with no database or backend">
-    <meta name="author" content="">
-
-    <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- FONT
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="<?= base_url('assets/shop/css/google_fonts.css?family=Raleway:400,300,600'); ?>" rel="stylesheet" type="text/css">
-	<link href="<?= base_url('assets/shop/css/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet">
-
-    <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="<?= base_url('assets/shop/css/imports.min.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/shop/css/simpleStore.min.css'); ?>">
-
-    <!-- Favicon
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="<?= base_url('assets/shop/images/favicon.png'); ?>">
-
-</head>
-<body>
-
+<div id="grad">
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="container simpleStore">
-        
+    <div class="container simpleStore" style="margin-top: 0">        
 
         <?php
 
@@ -158,6 +126,15 @@
 			<a href="#" class="close alert_close">&times;</a>
         </div>
     </script>
+
+
+<!-- botão flutuante WhatsApp -->
+<a href="https://wa.me/5521987654321?text=Podemos%20conversar%20agora?" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+<i style="margin-top:16px" class="fa fa-whatsapp"></i>
+</a>
+
+</div> <!-- fim da div gradiente -->
 
 <!-- End Document
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
